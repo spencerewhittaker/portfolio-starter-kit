@@ -65,6 +65,11 @@ export default function RootLayout({
           }}
         />
       </head>
+      import CommandBarLoader from './components/CommandBarLoader'
+...
+<body className="..." >
+  <CommandBarLoader />
+
       <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
         ...
 
