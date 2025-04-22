@@ -1,5 +1,15 @@
 "use client";
 
+declare global {
+  interface Window {
+    CommandBar?: {
+      boot: (userId: string) => Promise<void>;
+      shutdown: () => void;
+      getUser?: () => any;
+    };
+  }
+}
+
 import { useEffect } from "react";
 
 export default function CommandBarProvider() {
